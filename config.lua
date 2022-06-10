@@ -646,13 +646,12 @@ Config.MenuItems = {
         items = {
             {
                 id = 'givehousekey',
-                title = 'Give House Keys',
-                icon = 'key',
-                type = 'client',
-                event = 'qb-houses:client:giveHouseKey',
-                shouldClose = true,
-                items = {}
-            }, {
+                        title = 'Keys',
+                        icon = 'key',
+                        type = 'client',
+                        event = 'loaf_keysystem:openMenu',
+                        shouldClose = true,
+            }, --[[{
                 id = 'removehousekey',
                 title = 'Remove House Keys',
                 icon = 'key',
@@ -660,21 +659,21 @@ Config.MenuItems = {
                 event = 'qb-houses:client:removeHouseKey',
                 shouldClose = true,
                 items = {}
-            }, {
+            },--]]--[[ {
                 id = 'togglelock',
                 title = 'Toggle Doorlock',
                 icon = 'door-closed',
                 type = 'client',
                 event = 'qb-houses:client:toggleDoorlock',
                 shouldClose = true
-            }, {
-                id = 'decoratehouse',
-                title = 'Decorate House',
-                icon = 'boxes',
-                type = 'client',
-                event = 'qb-houses:client:decorate',
-                shouldClose = true
-            }, {
+            },--]] {
+                id = 'furnishhouse',
+                        title = 'Furnish House',
+                        icon = 'couch',
+                        type = 'client',
+                        event = 'loaf_housing:furnish_house',
+                        shouldClose = true
+            }, --[[{
                 id = 'houseLocations',
                 title = 'Interaction Locations',
                 icon = 'home',
@@ -702,7 +701,7 @@ Config.MenuItems = {
                         shouldClose = true
                     }
                 }
-            }
+            }--]]
         }    
     },    
     [6] = {
@@ -710,14 +709,14 @@ Config.MenuItems = {
         title = 'General',
         icon = 'globe-europe',
         items = {
-            {
+            --[[{
                 id = 'givenum',
                 title = 'Give Contact Details',
                 icon = 'address-book',
                 type = 'client',
                 event = 'qb-phone:client:GiveContactDetails',
                 shouldClose = true
-            },{
+            },--]]{
                 
                 id = 'givekey',
                 title = 'Give Vehicle Keys',
@@ -1011,14 +1010,14 @@ Config.JobInteractions = {
             type = 'client',
             event = 'qb-tunerchip:client:TuneStatus',
             shouldClose = true
-        }, {
+        }, --[[{
             id = 'resethouse',
             title = 'Reset house lock',
             icon = 'key',
             type = 'client',
             event = 'qb-houses:client:ResetHouse',
             shouldClose = true
-        }, {
+        },--]] {
             id = 'takedriverlicense',
             title = 'Revoke Drivers License',
             icon = 'id-card',
