@@ -135,7 +135,7 @@ local function SetupRadialMenu()
                     title = Lang:t("options.emergency_button"),
                     icon = 'exclamation-circle',
                     type = 'client',
-                    event = 'police:client:SendPoliceEmergencyAlert',
+                    event = 'ps-dispatch:client:emsdown',
                     shouldClose = true,
                 },
             }
