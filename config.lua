@@ -709,15 +709,14 @@ Config.MenuItems = {
         title = 'General',
         icon = 'globe-europe',
         items = {
-            --[[{
+            {
                 id = 'givenum',
                 title = 'Give Contact Details',
                 icon = 'address-book',
                 type = 'client',
                 event = 'qb-phone:client:GiveContactDetails',
                 shouldClose = true
-            },--]]{
-                
+            },{                
                 id = 'givekey',
                 title = 'Give Vehicle Keys',
                 icon = 'key',
@@ -738,14 +737,14 @@ Config.MenuItems = {
                 type = 'client',
                 event = 'qb-drugs:client:cornerselling',
                 shouldClose = true
-            },{
+            },--[[{
                 id = 'togglehotdogsell',
                 title = 'Hotdog Selling',
                 icon = 'hotdog',
                 type = 'client',
                 event = 'qb-hotdogjob:client:ToggleSell',
                 shouldClose = true
-            },{
+            },--]]{
                 
                     id = 'clothesmenu',
                     title = 'Clothing',
